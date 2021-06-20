@@ -9,7 +9,16 @@ body {
   background-image: url("img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  top: 0 !important;
 }
+
+/*lang*/
+#goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-te-banner-frame{display: none !important;} 
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
+.goog-logo-link{display: none !important;}
+.goog-te-gadget{height: 28px !important;  overflow: hidden;}
+
 
 .container {
   max-width: 928px;
