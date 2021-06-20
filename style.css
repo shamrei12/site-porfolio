@@ -91,6 +91,7 @@ body {
   text-align: center;
 }
 
+
 .user-img{
   margin-top: 10px;
   border: 10px solid #fff;
@@ -154,10 +155,6 @@ body {
   border-radius: 6px;
 }
 
-.portfolio {
-  margin: 0 0 120px;
-}
-
 .projects {
   margin: 0;
   padding: 0;
@@ -210,4 +207,18 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+/*portfolio*/
+.list-portfolio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 120px;
+
+}
+.list{
+  width: 300px;
+}
+.list img{
+  width: 250px;
 }
