@@ -21,7 +21,7 @@ body {
 
 
 .container {
-  max-width: 928px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -210,14 +210,19 @@ body {
 }
 
 /*portfolio*/
+.portfolio{
+  
+}
 .list-portfolio{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 120px;
+  grid-column-gap: 20px;
+  
 
 }
 .list{
-  width: 300px;
+  width: 360px;
 }
 .list img{
   width: 250px;
