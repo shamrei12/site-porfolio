@@ -234,9 +234,10 @@ body {
 }
 
 /*mobile version*/
-
-
 @media (max-width: 768px) {
+  html, body{
+    overflow-x: hidden;
+  }
   body {
     margin: 0;
     min-width: 360px;
@@ -249,7 +250,9 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     top: 0 !important;
+    position: relative;
   }
+
   .user-img{
     border: 10px solid #fff;
     margin: 0 auto;
@@ -265,21 +268,30 @@ body {
 
   /*portfolio*/
 .list-portfolio{
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 120px;
   grid-column-gap: 10px;
   grid-row-gap: 30px;
-  padding-left: 10%;
+  padding-left: 17%;
 }
 
 .list{
   width: 360px;
 }
+.list p{
+  width: 250px;
+  text-align: left;
+}
 .list img{
   width: 250px;
 }
-
-/*mobile version*/
-
+.page-footer {
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #00417d;
+  color: #ffffff;
+}
 }
