@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  min-width: 960px;
+  min-width: 1010px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -108,7 +108,7 @@ body {
   background: url(img/user-img.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 360px;
+  width: 400px;
   height: 400px;
   background-position: center;
   border-radius: 50%;
@@ -117,7 +117,7 @@ body {
 
 .intro h3,
 .portfolio h3
-.static-blog h3 {
+.choose-down-cv h3 {
   margin: 0 0 12px;
   font-size: 28px;
   line-height: 40px;
@@ -231,6 +231,63 @@ body {
 }
 .list img{
   width: 250px;
+}
+/*my cv*/
+.choose-down-cv{
+  margin-bottom: 30px;
+}
+.choose-down-cv h2{
+    margin: 0 0 56px;
+    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 400;
+    text-align: center;
+}
+.my-cv{
+  margin: 0 auto;
+  padding: 30px;
+  border: .5px solid #000;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cv-email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px 0;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+.download-cv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px 0;
+
+}
+.cv-email input{
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  display: block;
+  border: .5px solid #000;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 15px;
+}
+.btn-email{
+  width: 150px;
+  height: 40px;
+  border: .5px solid #000;
+  border-radius: 10px;
+  outline: none;
 }
 
 /*mobile version*/
