@@ -12,9 +12,9 @@ body {
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background: url('img/kolizej_day.jpg');
+  background: url('img/kolizej_night.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:top center;
   -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -125,7 +125,7 @@ body {
 }
 
 .hero-image {
-  margin-bottom: 720px;
+  margin-bottom: 520px;
 }
 
 

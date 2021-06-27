@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="style"  href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Портфолио Junior front-end разработчика</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,10 +13,17 @@
 		<div class="container">
       <a class="header-email" href="mailto:alex.shamrey@gmail.com">alex.shamrey@gmail.com</a>
       <a class="header-phone" href="tel:+375336897386">+375 33 68 97 386</a>
-      <div class="language">
-        <img src="img/en.png" alt="ru" data-google-lang="en" class="language__img">
-        <img src="img/ru.png" alt="en" data-google-lang="ru">
-     </div>
+      <div class="lang-toogle"> 
+        <div class="language">
+          <img src="img/en.png" alt="ru" data-google-lang="en" class="language__img">
+          <img src="img/ru.png" alt="en" data-google-lang="ru">
+       </div>
+       <div class="toogle">
+        <input type="checkbox" name="toggle" id="toggle-button" class="toggle-button" onclick="toogle()">
+        <label for="toggle-button" class="text">Toggle Button</label>
+       </div>
+      </div>
+     
   </div>
 </header>
 
@@ -84,5 +91,6 @@
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script src="js/google-translate.js"></script>
 <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+<script src="js/toogle-night-theme.js"></script>
   </body>
 </html>
