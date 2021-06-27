@@ -12,7 +12,7 @@ body {
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background: url('img/kolizej_day.jpg');
+  background: url('img/kolizej_day-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   -moz-background-size: 100%; /* Firefox 3.6+ */
@@ -364,7 +364,7 @@ body {
     line-height: 32px;
     color: #222222;
     background-color: #f2f4f6;
-    background-image: url("img/hero-bg.jpg");
+    background-image: url("img/kolizej_day-min.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     top: 0 !important;
