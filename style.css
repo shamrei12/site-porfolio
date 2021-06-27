@@ -15,6 +15,7 @@ body {
   background: url('img/kolizej_day-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -366,9 +367,8 @@ body {
     background-color: #f2f4f6;
     background-image: url("img/kolizej_day-min.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-size: cover;
     top: 0 !important;
-    position: relative;
   }
 
   .user-img{

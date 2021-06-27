@@ -366,9 +366,8 @@ body {
     background-color: #f2f4f6;
     background-image: url("img/kolizej_night-min.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-size: cover;
     top: 0 !important;
-    position: relative;
   }
 
   .user-img{
