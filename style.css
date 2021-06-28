@@ -12,15 +12,17 @@ body {
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background: url('img/kolizej_day-min.jpg');
+  background: url('img/kolizei_day_one-min.jpg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
   -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
   top: 0 !important;
+}
+.hero-image, .page-header{
+  color: #111;
 }
 
 /*lang*/
@@ -128,7 +130,6 @@ body {
 .hero-image {
   margin-bottom: 520px;
 }
-
 
 .hero-image .container {
   max-width: 1408px;
@@ -354,23 +355,29 @@ body {
 
 /*mobile version*/
 @media (max-width: 768px) {
-  html, body{
-    overflow-x: hidden;
-  }
   body {
     margin: 0;
     min-width: 360px;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
     line-height: 32px;
-    color: #222222;
+    color: #222;
     background-color: #f2f4f6;
-    background-image: url("img/kolizej_day-min.jpg");
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
     top: 0 !important;
   }
-
+  html, body{
+    overflow-x: hidden;
+  }
+  .hero-image {
+    margin-bottom: 220px;
+  }
+  
   .user-img{
     border: 10px solid #fff;
     margin: 0 auto;

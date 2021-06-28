@@ -6,13 +6,13 @@
 
 body {
   margin: 0;
-  min-width: 1010px;
+  min-width: 968px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
-  color: #222222;
-  background-color: #f2f4f6;
+  color: #e7e7e7;
   background: url('img/kolizej_night-min.jpg');
+  background-color:#222;
   background-repeat: no-repeat;
   background-position:top center;
   -moz-background-size: 100%; /* Firefox 3.6+ */
@@ -29,6 +29,12 @@ body {
 .goog-logo-link{display: none !important;}
 .goog-te-gadget{height: 28px !important;  overflow: hidden;}
 
+.hero-image, .page-header{
+  color: #e7e7e7;
+}
+.intro, .portfolio, .choose-down-cv{
+  background-color:#222;
+}
 
 .container {
   max-width: 968px;
@@ -353,22 +359,27 @@ body {
 
 /*mobile version*/
 @media (max-width: 768px) {
-  html, body{
-    overflow-x: hidden;
-  }
+
   body {
     margin: 0;
     min-width: 360px;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
     line-height: 32px;
-    color: #222222;
-    background-color: #f2f4f6;
-    background-image: url("img/kolizej_night-min.jpg");
+    color: #e7e7e7;
+    background-color: #222;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     top: 0 !important;
   }
+  html, body{
+    overflow-x: hidden;
+  }
+  .hero-image {
+    margin-bottom: 220px;
+  }
+
 
   .user-img{
     border: 10px solid #fff;
