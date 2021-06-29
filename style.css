@@ -2,6 +2,41 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+    top: 0 !important;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.page-header {
+    padding: 32px 0 32px;
+    min-width: 968px;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: #222222;
+    background-color: #f2f4f6;
+    background: url('img/kolizei_day_one-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    top: 0 !important;
+}
+
+.hero-image,
+.page-header {
+    color: #111;
+}
+
+.info {
+    float: right;
+}
+
+=======
 }
 
 .container {
@@ -42,6 +77,7 @@
     float: right;
 }
 
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
 .lang-toogle {
     float: right;
 }
@@ -61,12 +97,21 @@
 .goog-text-highlight {
     background: none !important;
     box-shadow: none !important;
+<<<<<<< HEAD
 }
 
 .goog-logo-link {
     display: none !important;
 }
 
+=======
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
 .goog-te-gadget {
     height: 28px !important;
     overflow: hidden;
@@ -339,6 +384,47 @@
 }
 
 .my-cv {
+<<<<<<< HEAD
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "a a a a a a a a"
+    "b b b b b b b b"
+    "c c c c c c c c";
+    justify-items: center;
+}
+.my-cv input{
+    grid-area: a;
+    width: 340px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+    padding-left: 5px;
+}
+.my-cv .btn-email{
+grid-area: b;
+}
+.my-cv a{    
+    grid-area: c
+}
+.cv-email input {
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    display: block;
+    border: .5px solid #000;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+=======
     margin: 0 auto;
     padding: 30px;
     border: .5px solid #000;
@@ -378,6 +464,7 @@
     margin-bottom: 15px;
 }
 
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
 .btn-email {
     width: 150px;
     height: 40px;
@@ -395,15 +482,27 @@
         margin: 0;
         padding: 0;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     html,
     body {
         overflow-x: hidden;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .container {
         max-width: 1280px;
         margin: 0 auto;
         padding: 0 16px;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .page-header {
         padding: 32px 0 32px;
         min-width: 360px;
@@ -418,34 +517,66 @@
         background-size: cover;
         top: 0 !important;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .page-header .info {
         float: right;
         padding-left: 50px;
         color: #000;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     /*lang*/
     #goog-gt-tt,
     .goog-te-balloon-frame {
         display: none !important;
     }
+<<<<<<< HEAD
+
     .goog-te-banner-frame {
         display: none !important;
     }
+
+=======
+    .goog-te-banner-frame {
+        display: none !important;
+    }
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .goog-text-highlight {
         background: none !important;
         box-shadow: none !important;
     }
+<<<<<<< HEAD
+
     .goog-logo-link {
         display: none !important;
     }
+
+=======
+    .goog-logo-link {
+        display: none !important;
+    }
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .goog-te-gadget {
         height: 28px !important;
         overflow: hidden;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .page-header {
         margin: 0 0 120px;
         padding: 32px 0 32px;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .page-header a {
         margin-left: 56px;
         color: #288be6;
@@ -453,25 +584,49 @@
         background-repeat: no-repeat;
         background-position: left;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .header-email {
         padding-left: 30px;
         background-image: url("img/icon-email-header.svg");
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .header-phone {
         padding-left: 25px;
         background-image: url("img/icon-phone-header.svg");
     }
+<<<<<<< HEAD
+
     .language img {
         width: 30px;
     }
+
+=======
+    .language img {
+        width: 30px;
+    }
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .lang-toogle {
         margin-left: 30px;
         display: flex;
         float: right;
     }
+<<<<<<< HEAD
+
     .toogle {
         margin-left: 10px;
     }
+
+=======
+    .toogle {
+        margin-left: 10px;
+    }
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     /*toogle button*/
     .toggle-button {
         position: relative;
@@ -489,6 +644,10 @@
         appearance: none;
         transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .toggle-button::after {
         content: "";
         position: absolute;
@@ -501,21 +660,41 @@
         transform: translateX(0);
         transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .toggle-button:checked::after {
         transform: translateX(calc(100% + 3px));
         background-color: #fff;
     }
+<<<<<<< HEAD
+
     .toggle-button:checked {
         background-color: blue;
     }
+
+=======
+    .toggle-button:checked {
+        background-color: blue;
+    }
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .hero-image {
         padding-top: 220px;
         margin-bottom: 400px;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .hero-image .container {
         max-width: 1408px;
         text-align: center;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .heading {
         margin: 0 0 16px;
         font-family: "Old Standard TT", "Times", "Times New Roman", serif;
@@ -523,14 +702,26 @@
         line-height: 96px;
         font-weight: 400;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .hero-image p {
         margin: 0;
         font-size: 32px;
         line-height: 48px;
     }
+<<<<<<< HEAD
+
     .intro {
         margin: 0 0 120px;
     }
+
+=======
+    .intro {
+        margin: 0 0 120px;
+    }
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .subheading {
         margin: 0 0 56px;
         font-family: "Old Standard TT", "Times", "Times New Roman", serif;
@@ -539,6 +730,10 @@
         font-weight: 400;
         text-align: center;
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8da149e25c38afc74a5f718a1d58b8f094e7a78
     .user-img {
         margin-top: 10px;
         border: 10px solid #fff;
