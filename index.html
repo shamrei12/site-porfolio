@@ -45,32 +45,40 @@
         </div>
 
     </section>
-
-    <section class="portfolio">
-        <div class="container"></div>
+    <div class="container">
         <h2 class="subheading">Мои работы</h2>
-        <div class="list-portfolio">
-            <div class="list">
-                <h3>Сайт инструктора Кекса</h3>
-                <img src="files/project.jpg" alt="Cайт инструктора Кекса">
-                <p>Небольшой лендинг о школе для начинающих.</p>
-                <a class="button" target="_blank" href="source/project_1/index.html">Открыть страницу</a>
-            </div>
-            <div class="list">
-                <h3>Калькулятор</h3>
-                <img src="files/project.jpg" alt="Cайт инструктора Кекса">
-                <p>Небольшой лендинг о школе для начинающих.</p>
-                <a class="button" target="_blank" href="source/project_2/index.html">Открыть страницу</a>
-            </div>
-            <div class="list">
-                <h3>Сайт инструктора Кекса</h3>
-                <img src="files/project.jpg" alt="Cайт инструктора Кекса">
-                <p>Небольшой лендинг о школе для начинающих.</p>
-                <a class="button" target="_blank" href="source/project_3/index.html">Открыть страницу</a>
-            </div>
-        </div>
-    </section>
+        <section class="portfolio">
+            <div class="slider">
+                <!-- Первый слайд -->
+                <div class="item">
+                    <h3>Сайт инструктора Кекса</h3>
+                    <img src="files/project.jpg" alt="Cайт инструктора Кекса">
+                    <p>Небольшой лендинг о школе для начинающих.</p>
+                    <a class="button" target="_blank" href="source/project_1/index.html">Открыть страницу</a>
+                </div>
 
+                <!-- Второй слайд -->
+                <div class="item">
+                    <h3>Калькулятор</h3>
+                    <img src="files/project.jpg" alt="Cайт инструктора Кекса">
+                    <p>Небольшой лендинг о школе для начинающих.</p>
+                    <a class="button" target="_blank" href="source/project_2/index.html">Открыть страницу</a>
+                </div>
+
+                <!-- Третий слайд -->
+                <div class="item">
+                    <h3>Калькулятор</h3>
+                    <img src="files/project.jpg" alt="Cайт инструктора Кекса">
+                    <p>Небольшой лендинг о школе для начинающих.</p>
+                    <a class="button" target="_blank" href="source/project_2/index.html">Открыть страницу</a>
+                </div>
+
+                <!-- Кнопки-стрелочки -->
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+        </section>
+    </div>
     <section class="choose-down-cv">
         <h2>Мое Резюме</h2>
         <div class="my-cv">
@@ -93,4 +101,5 @@
     <script src="js/google-translate.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
     <script src="js/toogle-night-theme.js"></script>
+    <script src="js/slider.js"></script>
 </body>
