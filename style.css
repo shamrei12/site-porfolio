@@ -21,7 +21,6 @@
     background-color: #f2f4f6;
     background: url('img/kolizei_day_one-min.jpg');
     background-repeat: no-repeat;
-    background-position: center top;
     background-size: cover;
     top: 0 !important;
 }
@@ -33,6 +32,10 @@
 
 .info {
     float: right;
+
+}
+.info a{
+    color: #000;
 }
 
 .container {
@@ -40,35 +43,6 @@
     margin: 0 auto;
     padding: 0 16px;
 }
-
-.page-header {
-    padding: 32px 0 32px;
-    min-width: 968px;
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    color: #222222;
-    background-color: #f2f4f6;
-    background: url('img/kolizei_day_one-min.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    -moz-background-size: 100%;
-    /* Firefox 3.6+ */
-    -webkit-background-size: 100%;
-    /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%;
-    /* Opera 9.6+ */
-    background-size: 100%;
-    /* Современные браузеры */
-    top: 0 !important;
-}
-
-.hero-image,
-.page-header {
-    color: #111;
-}
-
 .info {
     float: right;
 }
@@ -114,20 +88,28 @@
 
 .page-header a {
     margin-left: 56px;
-    color: #288be6;
     text-decoration: none;
     background-repeat: no-repeat;
     background-position: left;
 }
 
 .header-email {
-    padding-left: 30px;
-    background-image: url("img/icon-email-header.svg");
+
+    padding-left: 25px;
+    background-size:10%;
+    background-image: url("img/icon-email-dark.svg");
+    
 }
 
 .header-phone {
     padding-left: 25px;
-    background-image: url("img/icon-phone-header.svg");
+    background-size:9%;
+    background-image: url("img/icon-phone-dark.svg");
+}
+.header-github{
+    padding-left: 25px;
+    background-size:10%;
+    background-image: url("img/github-seeklogo.com.svg");
 }
 
 .language img {
@@ -187,8 +169,8 @@
 }
 
 .hero-image {
-    padding-top: 320px;
-    margin-bottom: 520px;
+    padding-top: 220px;
+    margin-bottom: 320px;
 }
 
 .hero-image .container {
@@ -342,11 +324,12 @@
 
 
 /* Слайдер: */
-
+.portfolio{
+    margin-bottom: 50%;
+}
 .slider {
     max-width: 90%;
     position: relative;
-    /* Центрируем по горизонтали: */
     margin: auto;
     height: 300px;
 }
@@ -358,7 +341,7 @@
 .slider .item img {
     object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: 70%;
 }
 
 .slider .previous,
@@ -366,13 +349,14 @@
     cursor: pointer;
     position: absolute;
     width: auto;
-    margin-top: 10%;
+    margin-top: 25%;
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 16px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .slider .next {
@@ -382,7 +366,7 @@
 
 .slider .previous:hover,
 .slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .slider .item {
@@ -407,7 +391,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 240px;
     grid-column-gap: 10px;
 }
 
@@ -424,7 +408,6 @@
 
 .choose-down-cv {
     margin-bottom: 30px;
-    margin-top: 300px;
 }
 
 .choose-down-cv h2 {
@@ -436,69 +419,67 @@
     text-align: center;
 }
 
-.my-cv {
-    padding-top: 100px;
-    width: 650px;
-    height: 600px;
+.my-cv{
     margin: 0 auto;
-    box-shadow: rgba(14, 13, 37, 0.12) 0px 2px 4px 0px, rgba(14, 13, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    justify-content: center;
+}
+.form-send{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "a a a a a a a a" "d d d d d d d d" "b b b b b b b b" "c c c c c c c c";
-    grid-template-rows: 120px 120px 120px 120px;
-    justify-items: center;
-    margin-bottom: 100px;
+    grid-template-areas: "a a a a b b b b" "c c c c c c c c" "d d d d d d d d";
+    width: 800px;
+    justify-content: center;
+    text-align: center;
+    align-self: start;
+    align-items: center;
+    align-content: center;
+    justify-items: center; 
 }
-
-.my-cv_email {
+.input-name, .input-email, .text-send, .email-btn{
+    outline: none;
     grid-area: a;
-    width: 340px;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    border: 1px solid #000; 
+}
+.input-name, .input-email, .text-send:hover{
     outline: none;
+}
+
+
+.input-name{
+    background-color:transparent;
+    grid-area: a;
+    width: 350px;
+    margin: 0 20px 20px 20px;
+    height: 30px;
     border: 1px solid #000;
-    padding-left: 5px;
-}
-
-.my-cv_name {
-    grid-area: d;
-    width: 340px;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid #000;
-    padding-left: 5px;
-}
-
-.my-cv .btn-email {
-    grid-area: b;
-}
-
-.my-cv a {
-    grid-area: c
-}
-
-.cv-email input {
-    width: 300px;
-    height: 40px;
     padding-left: 10px;
-    display: block;
-    border: .5px solid #000;
-    border-radius: 10px;
-    outline: none;
-    margin-bottom: 15px;
 }
-
-.btn-email {
+.input-email{
+    background-color:transparent;
+    outline: none;
+    grid-area: b;
+    width: 350px;
+    margin: 0 20px 20px 30px;
+    height: 30px;
+    padding-left: 10%;
+}
+.text-send{
+    background-color:transparent;
+    resize: none;
+    grid-area: c;
+    width: 750px;
+    margin-bottom: 40px;
+    height: 300px;
+    padding-left: 10px;
+}
+.email-btn{
+    grid-area: d;
     width: 150px;
-    height: 40px;
-    border: .5px solid #000;
-    border-radius: 10px;
+    height: 30px;
     outline: none;
+    background-color:#222;
+    color:#fff;
 }
-
 
 /*mobile version*/
 
@@ -698,62 +679,68 @@
         border-radius: 0 3px 3px 0;
     }
     /* form_cv*/
-    .choose-down-cv {
-        margin-bottom: 30px;
-    }
-    .choose-down-cv h2 {
-        margin: 0 0 56px;
-        font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-        font-size: 64px;
-        line-height: 80px;
-        font-weight: 400;
-        text-align: center;
-    }
-    .my-cv {
-        margin: 0 auto;
-        padding-top: 50px;
-        width: 350px;
-        height: 350px;
-        margin: 0 auto;
-        box-shadow: rgba(14, 13, 37, 0.12) 0px 2px 4px 0px, rgba(14, 13, 37, 0.32) 0px 2px 16px 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "a a a a a a a a" "d d d d d d d d" "b b b b b b b b" "c c c c c c c c";
-        grid-template-rows: 70px 70px 70px 70px;
-        justify-items: center;
-        margin-bottom: 100px;
-    }
-    .my-cv_email {
-        grid-area: a;
-        width: 300px;
-        height: 40px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        outline: none;
-        border: 1px solid #000;
-        padding-left: 5px;
-    }
-    .my-cv_name {
-        grid-area: d;
-        width: 300px;
-        height: 40px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        outline: none;
-        border: 1px solid #000;
-        padding-left: 5px;
-    }
-    .my-cv .btn-email {
-        grid-area: b;
-    }
-    .my-cv a {
-        grid-area: c
-    }
-    .btn-email {
-        width: 150px;
-        height: 40px;
-        border: .5px solid #000;
-        border-radius: 10px;
-        outline: none;
-    }
+    /*My cv */
+
+.choose-down-cv {
+    margin-bottom: 30px;
+    margin-top: 300px;
+}
+
+.choose-down-cv h2 {
+    margin: 0 0 56px;
+    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.my-cv{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.form-send{
+    display: grid;
+    grid-template-areas: "a a a a a a a a" "b b b b b b b b" "c c c c c c c c" "d d d d d d d d";
+    width: 100%;
+    align-content: center;
+}
+.input-name, .input-email, .text-send, .email-btn{
+    outline: none;
+    border: 1px solid #000; 
+}
+.input-name, .input-email, .text-send:hover{
+    outline: none;
+}
+
+
+.input-name{
+    grid-area: a;
+    width: 140%;
+    height: 30px;
+    border: 1px solid #000;
+}
+.input-email{
+    margin: 0;margin-bottom: 30px;
+    outline: none;
+    grid-area: b;
+    width: 140%;
+    height: 30px;
+}
+.text-send{
+    resize: none;
+    grid-area: c;
+    width: 140%;
+    margin-bottom: 40px;
+    height: 300px;
+}
+.email-btn{
+    grid-area: d;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    
+
+}
 }

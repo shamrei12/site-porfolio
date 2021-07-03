@@ -45,39 +45,6 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
-
-.page-header {
-    padding: 32px 0 32px;
-    min-width: 968px;
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    color: #fff;
-    background-color: #f2f4f6;
-    background: url('img/kolizej_night-min.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    -moz-background-size: 100%;
-    /* Firefox 3.6+ */
-    -webkit-background-size: 100%;
-    /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%;
-    /* Opera 9.6+ */
-    background-size: 100%;
-    /* Современные браузеры */
-    top: 0 !important;
-}
-
-.hero-image,
-.page-header {
-    color: #fff;
-}
-
-.page-header .info {
-    float: right;
-}
-
-
 /*lang*/
 
 #goog-gt-tt,
@@ -109,8 +76,8 @@ body {
 }
 
 .page-header a {
+    color: #fff;
     margin-left: 56px;
-    color: #288be6;
     text-decoration: none;
     background-repeat: no-repeat;
     background-position: left;
@@ -118,12 +85,14 @@ body {
 
 .header-email {
     padding-left: 30px;
-    background-image: url("img/icon-email-header.svg");
+    background-size:10%;
+    background-image: url("img/icon-email-white.svg");
 }
 
 .header-phone {
     padding-left: 25px;
-    background-image: url("img/icon-phone-header.svg");
+    background-size: 9%;
+    background-image: url("img/icon-phone-white.svg");
 }
 
 .language img {
@@ -183,8 +152,8 @@ body {
 }
 
 .hero-image {
-    padding-top: 320px;
-    margin-bottom: 500px;
+    padding-top: 220px;
+    margin-bottom: 320px;
 }
 
 .hero-image .container {
@@ -335,14 +304,21 @@ body {
     padding-left: 25px;
     background-image: url("img/icon-phone-footer.svg");
 }
+.header-github{
+    padding-left: 25px;
+    background-size:10%;
+    background-image: url("img/github-seeklogo.com.svg");
+}
 
 
 /* Слайдер: */
 
+.portfolio{
+    margin-bottom: 50%;
+}
 .slider {
     max-width: 90%;
     position: relative;
-    /* Центрируем по горизонтали: */
     margin: auto;
     height: 300px;
 }
@@ -354,21 +330,20 @@ body {
 .slider .item img {
     object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: 70%;
 }
-
 .slider .previous,
 .slider .next {
     cursor: pointer;
     position: absolute;
     width: auto;
-    margin-top: 10%;
+    margin-top: 25%;
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 16px;
-    transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .slider .next {
@@ -378,21 +353,12 @@ body {
 
 .slider .previous:hover,
 .slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .slider .item {
     animation-name: fade;
     animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: 1
-    }
-    to {
-        opacity: 1
-    }
 }
 
 
@@ -411,68 +377,63 @@ body {
     text-align: center;
 }
 
-.my-cv {
-    background-color: #fff;
-    padding-top: 100px;
-    width: 650px;
-    height: 600px;
+.my-cv{
     margin: 0 auto;
-    box-shadow: rgba(14, 13, 37, 0.12) 0px 2px 4px 0px, rgba(14, 13, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    justify-content: center;
+}
+.form-send{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "a a a a a a a a" "d d d d d d d d" "b b b b b b b b" "c c c c c c c c";
-    grid-template-rows: 120px 120px 120px 120px;
-    justify-items: center;
-    margin-bottom: 100px;
+    grid-template-areas: "a a a a b b b b" "c c c c c c c c" "d d d d d d d d";
+    width: 800px;
+    justify-content: center;
+    text-align: center;
+    align-self: start;
+    align-items: center;
+    align-content: center;
+    justify-items: center; 
 }
-
-.my-cv_email {
+.input-name, .input-email, .text-send, .email-btn{
+    outline: none;
     grid-area: a;
-    width: 340px;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.input-name, .input-email, .text-send:hover{
     outline: none;
+}
+
+
+.input-name{
+    grid-area: a;
+    width: 350px;
+    margin: 0 20px 20px 20px;
+    height: 30px;
     border: 1px solid #000;
-    padding-left: 5px;
-}
-
-.my-cv_name {
-    grid-area: d;
-    width: 340px;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid #000;
-    padding-left: 5px;
-}
-
-.my-cv .btn-email {
-    grid-area: b;
-}
-
-.my-cv a {
-    grid-area: c
-}
-
-.cv-email input {
-    width: 300px;
-    height: 40px;
     padding-left: 10px;
-    display: block;
-    border: .5px solid #000;
-    border-radius: 10px;
-    outline: none;
-    margin-bottom: 15px;
 }
-
-.btn-email {
-    width: 150px;
-    height: 40px;
-    border: .5px solid #000;
-    border-radius: 10px;
+.input-email{
     outline: none;
+    grid-area: b;
+    width: 350px;
+    margin: 0 20px 20px 30px;
+    height: 30px;
+    padding-left: 10%;
+}
+.text-send{
+    resize: none;
+    grid-area: c;
+    width: 750px;
+    margin-bottom: 40px;
+    height: 300px;
+    padding-left: 10px;
+}
+.email-btn{
+    grid-area: d;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    background-color:#fff;
+    color:#222;
 }
 
 
@@ -657,7 +618,7 @@ body {
     }
     /* form_cv*/
     .choose-down-cv {
-        margin-bottom: 30px;
+        margin-bottom: 70%;
     }
     .choose-down-cv h2 {
         margin: 0 0 56px;
@@ -712,6 +673,66 @@ body {
         height: 40px;
         border: .5px solid #000;
         border-radius: 10px;
+        outline: none;
+    }
+    .choose-down-cv {
+        margin-bottom: 70%;
+        margin-top: 300px;
+    }
+    
+    .choose-down-cv h2 {
+        margin: 0 0 56px;
+        font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+        font-size: 64px;
+        line-height: 80px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .my-cv{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .form-send{
+        display: grid;
+        grid-template-areas: "a a a a a a a a" "b b b b b b b b" "c c c c c c c c" "d d d d d d d d";
+        width: 100%;
+        align-content: center;
+    }
+    .input-name, .input-email, .text-send, .email-btn{
+        outline: none;
+        border: 1px solid #000; 
+    }
+    .input-name, .input-email, .text-send:hover{
+        outline: none;
+    }
+    
+    
+    .input-name{
+        grid-area: a;
+        width: 140%;
+        height: 30px;
+        border: 1px solid #000;
+    }
+    .input-email{
+        margin: 0;margin-bottom: 30px;
+        outline: none;
+        grid-area: b;
+        width: 140%;
+        height: 30px;
+    }
+    .text-send{
+        resize: none;
+        grid-area: c;
+        width: 140%;
+        margin-bottom: 40px;
+        height: 300px;
+    }
+    .email-btn{
+        grid-area: d;
+        width: 150px;
+        height: 30px;
         outline: none;
     }
 }

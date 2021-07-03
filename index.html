@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" id="style" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <title>Портфолио Junior front-end разработчика</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -15,6 +17,7 @@
             <div class="info">
                 <a class="header-email" href="mailto:alex.shamrey@gmail.com">alex.shamrey@gmail.com</a>
                 <a class="header-phone" href="tel:+375336897386">+375 33 68 97 386</a>
+                <a class="header-github" href="https://github.com/shamrei12">github.com/shamrei12</a>
             </div>
             <div class="lang-toogle">
                 <div class="language">
@@ -45,9 +48,10 @@
         </div>
 
     </section>
-    <div class="container">
-        <h2 class="subheading">Мои работы</h2>
-        <section class="portfolio">
+
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="subheading">Мои работы</h2>
             <div class="slider">
                 <!-- Первый слайд -->
                 <div class="item">
@@ -77,15 +81,18 @@
                 <a class="previous" onclick="previousSlide()">&#10094;</a>
                 <a class="next" onclick="nextSlide()">&#10095;</a>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
     <section class="choose-down-cv">
-        <h2>Мое Резюме</h2>
+        <h2>Форма связи</h2>
         <div class="my-cv">
-            <input type="email" class="my-cv_email" placeholder="Введите почту для отправки резюме">
-            <input type="text" class="my-cv_name" placeholder="Как я могу к вам обращаться?">
-            <button class="btn-email">Отправить</button>
-            <a href="" target="_blank">Скачать резюме</a>
+            <form action="#" class="form-send">
+                <input type="text" class="input-name" placeholder="Введите ваше имя">
+                <input type="email" class="input-email" placeholder="Введите вашу почту">
+                <textarea name="send" id="text-send" class="text-send" placeholder="Введите ваше сообщение"></textarea>
+                <button class="email-btn">Отправить</button>
+            </form>
         </div>
     </section>
 
