@@ -26,6 +26,7 @@ body {
     background-color: #222;
     background: url('img/kolizej_night-min.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     top: 0 !important;
@@ -464,7 +465,9 @@ body {
         background-color: #f2f4f6;
         background: url('img/kolizej_night-min.jpg');
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
+        background-size: cover;
         background-size: cover;
         top: 0 !important;
     }
