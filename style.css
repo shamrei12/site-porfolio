@@ -22,9 +22,7 @@
     background: url('img/kolizei_day_one-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
-    background-size: cover;
     top: 0 !important;
 }
 
@@ -511,8 +509,6 @@
         background-color: #f2f4f6;
         background: url('img/kolizei_day_one-min.jpg');
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
         background-size: cover;
         top: 0 !important;
     }
