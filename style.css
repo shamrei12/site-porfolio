@@ -21,6 +21,7 @@
     background-color: #f2f4f6;
     background: url('img/kolizei_day_one-min.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     top: 0 !important;
@@ -33,9 +34,9 @@
 
 .info {
     float: right;
-
 }
-.info a{
+
+.info a {
     color: #000;
 }
 
@@ -44,6 +45,7 @@
     margin: 0 auto;
     padding: 0 16px;
 }
+
 .info {
     float: right;
 }
@@ -95,21 +97,20 @@
 }
 
 .header-email {
-
     padding-left: 25px;
-    background-size:10%;
+    background-size: 10%;
     background-image: url("img/icon-email-dark.svg");
-    
 }
 
 .header-phone {
     padding-left: 25px;
-    background-size:9%;
+    background-size: 9%;
     background-image: url("img/icon-phone-dark.svg");
 }
-.header-github{
+
+.header-github {
     padding-left: 25px;
-    background-size:10%;
+    background-size: 10%;
     background-image: url("img/github-seeklogo.com.svg");
 }
 
@@ -170,8 +171,8 @@
 }
 
 .hero-image {
-    padding-top: 320px;
-    margin-bottom: 320px;
+    padding-top: 420px;
+    margin-bottom: 420px;
 }
 
 .hero-image .container {
@@ -325,9 +326,11 @@
 
 
 /* Слайдер: */
-.portfolio{
-    margin-bottom: 50%;
+
+.portfolio {
+    margin-bottom: 35%;
 }
+
 .slider {
     max-width: 90%;
     position: relative;
@@ -420,12 +423,13 @@
     text-align: center;
 }
 
-.my-cv{
+.my-cv {
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
-.form-send{
+
+.form-send {
     display: grid;
     grid-template-areas: "a a a a b b b b" "c c c c c c c c" "d d d d d d d d";
     width: 800px;
@@ -434,20 +438,26 @@
     align-self: start;
     align-items: center;
     align-content: center;
-    justify-items: center; 
+    justify-items: center;
 }
-.input-name, .input-email, .text-send, .email-btn{
+
+.input-name,
+.input-email,
+.text-send,
+.email-btn {
     outline: none;
     grid-area: a;
-    border: 1px solid #000; 
+    border: 1px solid #000;
 }
-.input-name, .input-email, .text-send:hover{
+
+.input-name,
+.input-email,
+.text-send:hover {
     outline: none;
 }
 
-
-.input-name{
-    background-color:transparent;
+.input-name {
+    background-color: transparent;
     grid-area: a;
     width: 350px;
     margin: 0 20px 20px 20px;
@@ -455,8 +465,9 @@
     border: 1px solid #000;
     padding-left: 10px;
 }
-.input-email{
-    background-color:transparent;
+
+.input-email {
+    background-color: transparent;
     outline: none;
     grid-area: b;
     width: 350px;
@@ -464,8 +475,9 @@
     height: 30px;
     padding-left: 10%;
 }
-.text-send{
-    background-color:transparent;
+
+.text-send {
+    background-color: transparent;
     resize: none;
     grid-area: c;
     width: 750px;
@@ -473,14 +485,16 @@
     height: 300px;
     padding-left: 10px;
 }
-.email-btn{
+
+.email-btn {
     grid-area: d;
     width: 150px;
     height: 30px;
     outline: none;
-    background-color:#222;
-    color:#fff;
+    background-color: #222;
+    color: #fff;
 }
+
 
 /*mobile version*/
 
@@ -680,67 +694,66 @@
     }
     /* form_cv*/
     /*My cv */
-
-.choose-down-cv {
-    margin-bottom: 30px;
-    margin-top: 300px;
-}
-
-.choose-down-cv h2 {
-    margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-    font-size: 64px;
-    line-height: 80px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.my-cv{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-.form-send{
-    display: grid;
-    grid-template-areas: "a a a a a a a a" "b b b b b b b b" "c c c c c c c c" "d d d d d d d d";
-    width: 100%;
-    align-content: center;
-}
-.input-name, .input-email, .text-send, .email-btn{
-    outline: none;
-    border: 1px solid #000; 
-}
-.input-name, .input-email, .text-send:hover{
-    outline: none;
-}
-
-
-.input-name{
-    grid-area: a;
-    width: 140%;
-    height: 30px;
-    border: 1px solid #000;
-}
-.input-email{
-    margin: 0;margin-bottom: 30px;
-    outline: none;
-    grid-area: b;
-    width: 140%;
-    height: 30px;
-}
-.text-send{
-    resize: none;
-    grid-area: c;
-    width: 140%;
-    margin-bottom: 40px;
-    height: 300px;
-}
-.email-btn{
-    grid-area: d;
-    width: 150px;
-    height: 30px;
-    outline: none;
-    
-
-}
+    .choose-down-cv {
+        margin-bottom: 30px;
+        margin-top: 300px;
+    }
+    .choose-down-cv h2 {
+        margin: 0 0 56px;
+        font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+        font-size: 64px;
+        line-height: 80px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .my-cv {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .form-send {
+        display: grid;
+        grid-template-areas: "a a a a a a a a" "b b b b b b b b" "c c c c c c c c" "d d d d d d d d";
+        width: 100%;
+        align-content: center;
+    }
+    .input-name,
+    .input-email,
+    .text-send,
+    .email-btn {
+        outline: none;
+        border: 1px solid #000;
+    }
+    .input-name,
+    .input-email,
+    .text-send:hover {
+        outline: none;
+    }
+    .input-name {
+        grid-area: a;
+        width: 140%;
+        height: 30px;
+        border: 1px solid #000;
+    }
+    .input-email {
+        margin: 0;
+        margin-bottom: 30px;
+        outline: none;
+        grid-area: b;
+        width: 140%;
+        height: 30px;
+    }
+    .text-send {
+        resize: none;
+        grid-area: c;
+        width: 140%;
+        margin-bottom: 40px;
+        height: 300px;
+    }
+    .email-btn {
+        grid-area: d;
+        width: 150px;
+        height: 30px;
+        outline: none;
+    }
 }

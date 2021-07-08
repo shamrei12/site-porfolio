@@ -46,6 +46,8 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
+
+
 /*lang*/
 
 #goog-gt-tt,
@@ -86,7 +88,7 @@ body {
 
 .header-email {
     padding-left: 30px;
-    background-size:10%;
+    background-size: 10%;
     background-image: url("img/icon-email-white.svg");
 }
 
@@ -153,8 +155,8 @@ body {
 }
 
 .hero-image {
-    padding-top: 220px;
-    margin-bottom: 320px;
+    padding-top: 420px;
+    margin-bottom: 420px;
 }
 
 .hero-image .container {
@@ -305,18 +307,20 @@ body {
     padding-left: 25px;
     background-image: url("img/icon-phone-footer.svg");
 }
-.header-github{
+
+.header-github {
     padding-left: 25px;
-    background-size:10%;
+    background-size: 10%;
     background-image: url("img/github-seeklogo.com.svg");
 }
 
 
 /* Слайдер: */
 
-.portfolio{
-    margin-bottom: 50%;
+.portfolio {
+    margin-bottom: 35%;
 }
+
 .slider {
     max-width: 90%;
     position: relative;
@@ -333,6 +337,7 @@ body {
     width: 100%;
     height: 70%;
 }
+
 .slider .previous,
 .slider .next {
     cursor: pointer;
@@ -378,12 +383,13 @@ body {
     text-align: center;
 }
 
-.my-cv{
+.my-cv {
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
-.form-send{
+
+.form-send {
     display: grid;
     grid-template-areas: "a a a a b b b b" "c c c c c c c c" "d d d d d d d d";
     width: 800px;
@@ -392,19 +398,25 @@ body {
     align-self: start;
     align-items: center;
     align-content: center;
-    justify-items: center; 
+    justify-items: center;
 }
-.input-name, .input-email, .text-send, .email-btn{
+
+.input-name,
+.input-email,
+.text-send,
+.email-btn {
     outline: none;
     grid-area: a;
     border: 1px solid #fff;
 }
-.input-name, .input-email, .text-send:hover{
+
+.input-name,
+.input-email,
+.text-send:hover {
     outline: none;
 }
 
-
-.input-name{
+.input-name {
     grid-area: a;
     width: 350px;
     margin: 0 20px 20px 20px;
@@ -412,7 +424,8 @@ body {
     border: 1px solid #000;
     padding-left: 10px;
 }
-.input-email{
+
+.input-email {
     outline: none;
     grid-area: b;
     width: 350px;
@@ -420,7 +433,8 @@ body {
     height: 30px;
     padding-left: 10%;
 }
-.text-send{
+
+.text-send {
     resize: none;
     grid-area: c;
     width: 750px;
@@ -428,13 +442,14 @@ body {
     height: 300px;
     padding-left: 10px;
 }
-.email-btn{
+
+.email-btn {
     grid-area: d;
     width: 150px;
     height: 30px;
     outline: none;
-    background-color:#fff;
-    color:#222;
+    background-color: #fff;
+    color: #222;
 }
 
 
@@ -680,7 +695,6 @@ body {
         margin-bottom: 70%;
         margin-top: 300px;
     }
-    
     .choose-down-cv h2 {
         margin: 0 0 56px;
         font-family: "Old Standard TT", "Times", "Times New Roman", serif;
@@ -689,48 +703,51 @@ body {
         font-weight: 400;
         text-align: center;
     }
-    
-    .my-cv{
+    .my-cv {
         margin: 0 auto;
         display: flex;
         justify-content: center;
     }
-    .form-send{
+    .form-send {
         display: grid;
         grid-template-areas: "a a a a a a a a" "b b b b b b b b" "c c c c c c c c" "d d d d d d d d";
         width: 100%;
         align-content: center;
     }
-    .input-name, .input-email, .text-send, .email-btn{
+    .input-name,
+    .input-email,
+    .text-send,
+    .email-btn {
         outline: none;
-        border: 1px solid #000; 
+        border: 1px solid #000;
     }
-    .input-name, .input-email, .text-send:hover{
+    .input-name,
+    .input-email,
+    .text-send:hover {
         outline: none;
     }
-    
-    
-    .input-name{
+    .input-name {
         grid-area: a;
         width: 140%;
         height: 30px;
         border: 1px solid #000;
     }
-    .input-email{
-        margin: 0;margin-bottom: 30px;
+    .input-email {
+        margin: 0;
+        margin-bottom: 30px;
         outline: none;
         grid-area: b;
         width: 140%;
         height: 30px;
     }
-    .text-send{
+    .text-send {
         resize: none;
         grid-area: c;
         width: 140%;
         margin-bottom: 40px;
         height: 300px;
     }
-    .email-btn{
+    .email-btn {
         grid-area: d;
         width: 150px;
         height: 30px;

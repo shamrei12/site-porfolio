@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" id="style" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Портфолио Junior front-end разработчика</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
 
@@ -19,8 +18,8 @@
     <header class="page-header">
         <div class="container">
             <div class="info">
-                <a class="header-email" href="mailto:alex.shamrey@gmail.com">alex.shamrey@gmail.com</a>
-                <a class="header-phone" href="tel:+375336897386">+375 33 68 97 386</a>
+                <a class="header-email" href="mailto:aliaksei.shamrei@gmail.com">aliaksei.shamrei@gmail.com</a>
+                <a class="header-phone" href="tel:+375336897386">+375 33 6897386</a>
                 <a class="header-github" href="https://github.com/shamrei12">github.com/shamrei12</a>
             </div>
             <div class="lang-toogle">
@@ -91,11 +90,12 @@
     <section class="choose-down-cv">
         <h2>Форма связи</h2>
         <div class="my-cv">
-            <form action="#" class="form-send">
+            <form action="#" class="form-send" id="form-send">
                 <input type="text" class="input-name" placeholder="Введите ваше имя">
                 <input type="email" class="input-email" placeholder="Введите вашу почту">
                 <textarea name="send" id="text-send" class="text-send" placeholder="Введите ваше сообщение"></textarea>
-                <button class="email-btn">Отправить</button>
+                <button type="submit" class="email-btn">Отправить</button>
+                <div id="wdh_result_form"></div>
             </form>
         </div>
     </section>
