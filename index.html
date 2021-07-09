@@ -90,10 +90,10 @@
     <section class="choose-down-cv">
         <h2>Форма связи</h2>
         <div class="my-cv">
-            <form action="#" class="form-send" id="form-send">
-                <input type="text" class="input-name" placeholder="Введите ваше имя">
-                <input type="email" class="input-email" placeholder="Введите вашу почту">
-                <textarea name="send" id="text-send" class="text-send" placeholder="Введите ваше сообщение"></textarea>
+            <form action="php/send.php" class="form-send" id="form-send" method="POST">
+                <input type="text" class="input-name" placeholder="Введите ваше имя" required>
+                <input type="email" class="input-email" placeholder="Введите вашу почту" required>
+                <textarea name="send" id="text-send" class="text-send" placeholder="Введите ваше сообщение" required></textarea>
                 <button type="submit" class="email-btn">Отправить</button>
                 <div id="wdh_result_form"></div>
             </form>
